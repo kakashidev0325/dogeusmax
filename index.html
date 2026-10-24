@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dogeus Maximus — DOGEUS</title>
+    <meta
+      name="description"
+      content="Dogeus Maximus (DOGEUS) is a Solana token. The throne is the mark. The dog emperor has risen."
+    />
+    <link rel="icon" href="brand/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top">
+        <img src="brand/logo.png" alt="" width="44" height="44" />
+        <span>Dogeus Maximus</span>
+      </a>
+      <nav>
+        <a href="#signal">Signal</a>
+        <a href="#token">Token</a>
+        <a href="#path">Path</a>
+        <a href="https://x.com/dogeusmax_x" target="_blank" rel="noreferrer">X</a>
+        <a href="https://t.me/dogeusmax_tg" target="_blank" rel="noreferrer">TG</a>
+      </nav>
+      <button class="ticker-chip" type="button" data-copy="DOGEUS">DOGEUS</button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img class="hero-art" src="brand/banner.png" alt="Dogeus Maximus, a shiba emperor seated on a golden throne" />
+        <div class="hero-copy">
+          <p class="kicker">
+            <svg viewBox="0 0 32 26" aria-hidden="true">
+              <path d="M6.2 1.5h22.4L24.2 7H2z" />
+              <path d="M5.2 10.2h22.4l-4.4 5.5H.8z" />
+              <path d="M7.4 18.8h22.4L25.4 24.4H3z" />
+            </svg>
+            Solana
+          </p>
+          <h1>Born to<br />conquer.</h1>
+          <p class="hero-ticker">DOGEUS</p>
+          <p class="lead">
+            The dog emperor has risen. Dogeus Maximus holds the throne
+            on Solana under the ticker DOGEUS.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#token">Token</a>
+            <a class="btn ghost" href="https://x.com/dogeusmax_x" target="_blank" rel="noreferrer">X</a>
+            <a class="btn ghost" href="https://t.me/dogeusmax_tg" target="_blank" rel="noreferrer">Telegram</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="signal" class="panel signal">
+        <div class="signal-copy">
+          <p class="eyebrow">Signal</p>
+          <h2>The throne is a claim, not a date.</h2>
+          <p>
+            Dogeus Maximus is the push to take the seat: imperial red, gold
+            plate, no pause for permission. DOGEUS is that claim turned into
+            a Solana token.
+          </p>
+          <p>
+            The mark stays the same from logo to banner. A shiba on the throne,
+            a crimson cloak, and a gold laurel. One direction. No detour.
+          </p>
+        </div>
+        <figure>
+          <img src="brand/banner.png" alt="Dogeus Maximus on the imperial throne, crimson cloak and gold armor, with the legion behind" />
+        </figure>
+      </section>
+
+      <section id="token" class="panel token">
+        <div class="token-head">
+          <p class="eyebrow">Token</p>
+          <h2>Name, ticker, chain.</h2>
+        </div>
+        <div class="spec">
+          <img src="brand/logo.png" alt="" />
+          <dl>
+            <div>
+              <dt>Name</dt>
+              <dd>Dogeus Maximus</dd>
+            </div>
+            <div>
+              <dt>Ticker</dt>
+              <dd>
+                <button type="button" data-copy="DOGEUS">DOGEUS</button>
+              </dd>
+            </div>
+            <div>
+              <dt>Network</dt>
+              <dd>Solana</dd>
+            </div>
+            <div>
+              <dt>Mint</dt>
+              <dd>Posted on this page when the token is live. Until then, there is no contract to copy.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="path" class="panel path">
+        <p class="eyebrow">Path</p>
+        <h2>Three steps. Then you are in motion.</h2>
+        <ol>
+          <li>
+            <span>01</span>
+            <h3>Open a Solana wallet</h3>
+            <p>Phantom is the direct route. Create the wallet and write the recovery phrase down offline.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Hold SOL</h3>
+            <p>You need SOL for the swap and for the network fee. Send it on Solana, not another chain.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Swap for DOGEUS</h3>
+            <p>
+              When the mint is announced here, swap on
+              <a href="https://jup.ag/" target="_blank" rel="noreferrer">Jupiter</a>.
+              Match that address. Ignore lookalike tickers.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <img src="brand/logo.png" alt="" width="56" height="56" />
+      <div>
+        <strong>Dogeus Maximus</strong>
+        <span>DOGEUS · Solana · <a href="https://x.com/dogeusmax_x" target="_blank" rel="noreferrer">X</a> · <a href="https://t.me/dogeusmax_tg" target="_blank" rel="noreferrer">Telegram</a></span>
+      </div>
+      <p>
+        DOGEUS is a memecoin. Price can go to zero. This page is not an offer, a
+        listing, or financial advice.
+      </p>
+    </footer>
+
+    <script>
+      document.querySelectorAll("[data-copy]").forEach((el) => {
+        el.addEventListener("click", async () => {
+          const value = el.getAttribute("data-copy");
+          try {
+            await navigator.clipboard.writeText(value);
+            const previous = el.dataset.label || el.textContent;
+            if (!el.dataset.label) el.dataset.label = previous;
+            el.textContent = "Copied";
+            setTimeout(() => {
+              el.textContent = previous;
+            }, 1200);
+          } catch (err) {
+            el.textContent = value;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
